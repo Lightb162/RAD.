@@ -151,8 +151,6 @@ body{
 }
 
 .playlist{
-    position: absolute;
-    left: 230px;
     padding: 20px 40px;
     align-items: center;
 }
@@ -166,7 +164,6 @@ body{
 
 .playlist .list{
 
-    position: absolute;
     display: flex;
     gap: 20px;
     overflow: hidden;
@@ -174,7 +171,6 @@ body{
 
 .playlist .list  .item{
 
-    position: relative;
     min-width: 140px;
     width: 160px;
     padding: 15px;
@@ -227,6 +223,14 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.playlist .list .item p {
+
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
 }
 
 .botbar{
