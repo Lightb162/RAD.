@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RAD-Sign in</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <script src="https://kit.fontawesome.com/108d12eb77.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div class="container">
+        <div class="formbox">
+            <h1 id="title">Sign Up</h1>
+            <form action="project.html" method="post">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                     <div class="input-field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                     <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <p>Forget password? <a href="#">Click Here!</a></p>
+
+                </div>
+                <div class="btun-field">
+                    <button type="button" id="signupb">Sign Up</button>
+                    <button type="button" id="signinb" class="disable">Sign in</button>
+                </div>
+            </form>
+        </div>
+       </div>
+
+<script>
+
+let signupb = document.getElementById("signupb");
+let signinb = document.getElementById("signinb");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title");
+
+signinb.onclick = function(){
+
+    nameField.style.maxHeight ="0";
+    title.innerHTML = "Sign In";
+    signupb.classList.add("disable");
+    signinb.classList.remove("disable");
+}
+
+signupb.onclick = function(){
+
+    nameField.style.maxHeight ="60px";
+    title.innerHTML = "Sign Up";
+    signupb.classList.remove("disable");
+    signinb.classList.add("disable");
+}
+
+</script>
+
+    </body>
+</html>
