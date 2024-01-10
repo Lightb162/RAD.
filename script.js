@@ -10,6 +10,7 @@ signinb.onclick = function(){
     title.innerHTML = "Sign In";
     signupb.classList.add("disable");
     signinb.classList.remove("disable");
+    setTimeout(()=>document.getElementById("signinb").setAttribute('type', 'submit'),0)
 }
 
 signupb.onclick = function(){
